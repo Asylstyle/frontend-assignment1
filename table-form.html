@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 | Table and Form</title>
+    <link rel="stylesheet" href="table-form.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Task 1</a>
+        <a href="layout.html">Task 2</a>
+        <a href="exercise1/index.html">Task 3</a>
+        <a href="table-form.html">Task 4</a>
+        <a href="project.html">Task 5</a>
+    </nav>
+
+    <main>
+        <h1 id="page-title">Student Grades and Feedback</h1>
+
+        <section class="table-section">
+            <h2>Student Grades</h2>
+
+            <table>
+                <caption>Example grades for HTML and CSS</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Grade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Assylzhan</td>
+                        <td>HTML</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Aruzhan</td>
+                        <td>CSS</td>
+                        <td>88</td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td>Dias</td>
+                        <td>HTML</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Amina</td>
+                        <td>CSS</td>
+                        <td>92</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Number of students</td>
+                        <td>4</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section class="form-section">
+            <h2>Feedback Form</h2>
+            <p class="form-note">
+                Practice form: feedback is not stored or sent to a server.
+            </p>
+
+            <form action="table-form.html" method="get">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@email.com" required>
+
+                <label for="role">Your role</label>
+                <select id="role" name="role" required>
+                    <option value="">Choose your role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <fieldset>
+                    <legend>Was this website useful?</legend>
+
+                    <label class="radio-option" for="yes">
+                        <input type="radio" id="yes"
+                               name="useful" value="yes" required>
+                        Yes
+                    </label>
+
+                    <label class="radio-option" for="no">
+                        <input type="radio" id="no"
+                               name="useful" value="no">
+                        No
+                    </label>
+                </fieldset>
+
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments"
+                          rows="5"
+                          placeholder="Write your feedback"></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Assylzhan Amangeldi | SE-2526
+    </footer>
+</body>
+</html>
