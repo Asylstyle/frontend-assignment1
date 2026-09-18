@@ -1,0 +1,5 @@
+Personal Habit & Progress Tracker
+
+Personal Habit & Progress Tracker is a website that helps users organize their habits and track their progress. Its target users are students and people who want to build consistent daily routines. Users will be able to add habits, mark them as completed, and view weekly statistics. The purpose of the website is to make personal planning simple and help users understand their progress over time.
+
+These are static wireframes, not a working application. All displayed data is illustrative.
